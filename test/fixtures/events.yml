@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  starts_at: 2018-10-14 22:28:35
+  ends_at: 2018-10-14 22:28:35
+  kind: MyString
+  weekly_recurring: false
+
+two:
+  starts_at: 2018-10-14 22:28:35
+  ends_at: 2018-10-14 22:28:35
+  kind: MyString
+  weekly_recurring: false
