@@ -169,11 +169,11 @@ class EventTest < ActiveSupport::TestCase
 
   test "slots" do
     assert_equal [], Event.slots(DateTime.parse("2014-08-09 04:00"),DateTime.parse("2014-08-09 04:00"))
-    assert_equal [ {date: Date.parse("2014-08-09"), slot: "4:00"} ],
+    assert_equal [ {date: Date.parse("2014-08-09"), time: "4:00"} ],
                  Event.slots(DateTime.parse("2014-08-09 04:00"),DateTime.parse("2014-08-09 04:30"))
-    assert_equal [ {date: Date.parse("2014-08-09"), slot: "4:00"},
-                   {date: Date.parse("2014-08-09"), slot: "4:30"},
-                   {date: Date.parse("2014-08-09"), slot: "5:00"} ],
+    assert_equal [ {date: Date.parse("2014-08-09"), time: "4:00"},
+                   {date: Date.parse("2014-08-09"), time: "4:30"},
+                   {date: Date.parse("2014-08-09"), time: "5:00"} ],
                  Event.slots(DateTime.parse("2014-08-09 04:00"),DateTime.parse("2014-08-09 05:30"))
   end
 
